@@ -1,0 +1,39 @@
+ai-powered-vault/
+├── docker-compose.yml
+├── Dockerfile
+├── requirements.txt
+├── .env.example
+├── README.md
+├── AI_USAGE.md
+│
+├── app/
+│   ├── main.py
+│   ├── config.py
+│
+│   ├── api/
+│   │   └── v1/
+│   │       ├── upload.py
+│   │       ├── chat.py
+│   │       ├── documents.py
+│   │       └── metrics.py
+│
+│   ├── models/
+│   │   ├── db.py
+│   │   └── schemas.py
+│
+│   ├── services/
+│   │   ├── storage.py
+│   │   ├── extractor.py
+│   │   ├── chunker.py
+│   │   ├── embedder.py
+│   │   ├── retriever.py
+│   │   ├── llm_provider.py
+│   │   ├── rag_agent.py
+│   │   └── metrics.py
+│
+│   ├── tasks/
+│   │   └── ingest_tasks.py
+│
+│   └── utils/
+│       ├── text_clean.py
+│       └── citations.py
