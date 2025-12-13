@@ -65,16 +65,6 @@ celery -A app.celery_app.celery_app worker --loglevel=info
 3. Run the App
 python app/main.py
 
-🗂 Project Structure
-app/
-├── celery_app/
-│   ├── celery_app.py       # Celery configuration
-│   └── tasks.py            # Document ingestion tasks
-├── workers/
-│   └── ingestion.py        # Ingestion logic
-├── main.py                 # App entry point
-├── utils/                  # Utility scripts
-└── requirements.txt
 
 ✨ Contributing
 
@@ -90,9 +80,6 @@ Video & multimedia content ingestion
 
 Contributions are welcome!
 
-📝 License
-
-This project is licensed under the MIT License.
 
 ❤️ Made with love by Shivansh Pareek
 We will continue to add new features to make it even better.
