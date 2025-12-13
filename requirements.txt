@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+sqlalchemy
+psycopg2-binary
+python-multipart
+pydantic
+celery
+redis
+sentence-transformers
+pdfplumber
+python-docx
+numpy
+pgvector
+requests
