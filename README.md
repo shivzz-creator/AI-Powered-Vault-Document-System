@@ -81,9 +81,7 @@ Better AI summarization and extraction techniques
 
 Enhanced multi-document chat capabilities
 
-License
-
-This project is licensed under the MIT License.
 
 ❤️ Made with love by Shivansh Pareek
 We will continue to work on adding new features to it.
+Feel free to clone and contribute
