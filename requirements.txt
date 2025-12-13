@@ -1,5 +1,7 @@
 fastapi
+dotenv
 uvicorn
+groq
 sqlalchemy
 psycopg2-binary
 python-multipart
@@ -12,3 +14,4 @@ python-docx
 numpy
 pgvector
 requests
+streamlit
