@@ -1,65 +1,71 @@
-#AI-Powered Document Ingestion & Chat System
+📄 AI-Powered Document Ingestion & Chat System
 
-An AI-first backend system that allows users to upload documents, extract insights, and interact with them using natural language queries. Built with Python, Celery, and advanced AI models for efficient document processing.
+An AI-first backend that allows users to upload documents, extract insights, and chat with them naturally. Built with Python, Celery, and advanced AI models for seamless document processing.
 
-Features
+🌟 Features
 
-Upload and process documents in various formats (PDF, DOCX, TXT, etc.)
+📄 Upload and process documents in various formats (PDF, DOCX, TXT, etc.)
 
-AI-based content extraction and summarization
+🤖 AI-based content extraction, summarization, and semantic search
 
-Semantic search and retrieval from uploaded documents
+💬 Chat with your documents using natural language queries (RAG-based)
 
-RAG-based “ChatGPT for your documents” interface
+⚡ Asynchronous document ingestion using Celery for high performance
 
-Asynchronous document ingestion using Celery
+🔄 Easily extendable for new document types and AI features
 
-Installation
+🎬 Video Demo
 
-Clone the repository:
+Watch the system in action:
+
+Click on the image to view the video demo.
+
+🚀 Installation
+
+Clone the repository
 
 git clone <your-repo-url>
 cd <repo-folder>
 
 
-Create and activate a virtual environment:
+Create and activate a virtual environment
 
 python3 -m venv venv
 source venv/bin/activate  # macOS/Linux
 venv\Scripts\activate     # Windows
 
 
-Install dependencies:
+Install dependencies
 
 pip install -r requirements.txt
 
 
-Set up environment variables:
+Set up environment variables
 
-Create a .env file and add your API keys or configuration:
+Create a .env file:
 
 OPENAI_API_KEY=<your-key>
 REDIS_URL=redis://localhost:6379/0
 
-Running the Project
-Start Redis (for Celery backend):
+⚡ Running the Project
+1. Start Redis (Celery backend):
 redis-server
 
-Start Celery Worker
+2. Start Celery Worker
 
-Option 1 (Safe on macOS / avoid segmentation faults):
+Recommended (macOS safe / avoid segmentation faults):
 
 celery -A app.celery_app.celery_app worker --pool=solo --loglevel=info
 
 
-Option 2 (Default multiprocessing pool):
+Default (multiprocessing pool):
 
 celery -A app.celery_app.celery_app worker --loglevel=info
 
-Run the App
+3. Run the App
 python app/main.py
 
-Project Structure
+🗂 Project Structure
 app/
 ├── celery_app/
 │   ├── celery_app.py       # Celery configuration
@@ -70,18 +76,23 @@ app/
 ├── utils/                  # Utility scripts
 └── requirements.txt
 
-Contributing
+✨ Contributing
 
-We are continuously working on improving this system. Contributions and new feature ideas are welcome.
-Future enhancements include:
+We are actively working on adding new features:
 
 Improved document parsing for more formats
 
-Better AI summarization and extraction techniques
+Enhanced AI summarization & extraction
 
-Enhanced multi-document chat capabilities
+Multi-document chat and better semantic search
 
+Video & multimedia content ingestion
+
+Contributions are welcome!
+
+📝 License
+
+This project is licensed under the MIT License.
 
 ❤️ Made with love by Shivansh Pareek
-We will continue to work on adding new features to it.
-Feel free to clone and contribute
+We will continue to add new features to make it even better.
