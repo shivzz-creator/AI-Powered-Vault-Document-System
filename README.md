@@ -44,7 +44,7 @@ Set up environment variables
 
 Create a .env file:
 
-OPENAI_API_KEY=<your-key>
+GROQ_API_KEY=<your-key> ( USed free GROQ LLM Key)
 REDIS_URL=redis://localhost:6379/0
 
 ⚡ Running the Project
